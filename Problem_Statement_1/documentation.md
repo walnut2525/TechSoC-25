@@ -11,3 +11,5 @@ For the edge conditions, I subtracted the required number to get the correct ans
 By using if and elif statements, I made sure the ASCII values stayed within the correct bounds.
 Now that we had a list of numbers for the coded word, all that was left was to recombine them to get the final word back.
 I had to learn a new command, join(), to do this. Thus, the required word was formed.
+For decoding I followed the same procedure but changed the ASCII ranges a bit. Thus a coded word can be decoded.
+
