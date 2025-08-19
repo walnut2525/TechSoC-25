@@ -1,3 +1,5 @@
+need= input("Do want to code or decode? ")
+if need=="code":
     word=input(("Input the word you want the secret code for: "))
     letters=list(word)
     lenght=(len(word))-1
@@ -14,3 +16,26 @@
     new_letter=[chr(num) for num in value]
     new_word=''.join(new_letter)
     print("The secret code is: " + new_word)
+elif need== "decode":
+    code=input(("Input the word you want to decode: "))
+    letters=list(code)
+    lenght=(len(code))-1
+    i=0
+    value=[ord(char) for char in letters]
+    while i<= lenght:
+        if 0<= value[i]<65 or 91<=value[i]<=96 or 123<= value[i]<=127:      
+            value[i]=value[i]
+        elif 70<= value[i]<= 90 or 102<= value[i] <= 122:
+            value[i]=value[i]-5
+        else:
+            value[i]= value[i]+21
+        i=i+1
+    new_letter=[chr(num) for num in value]
+    new_word=''.join(new_letter)
+    print("The secret code is: " + new_word)
+else:
+    print("Invalid Input")
+
+
+
+
